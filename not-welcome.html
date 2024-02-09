@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Bit Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+</head>
+
+<style>
+    body {
+        background-color: #d4f5d0; /* Light green pastel */
+        color: #464646; /* Dark gray text */
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    button {
+        font-family: 'Press Start 2P', cursive;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 12px;
+        background-color: #4f9d4f; /* Pastel green */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #6abf69; /* Darker green on hover */
+    }
+
+    input {
+        font-family: 'Press Start 2P', cursive;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 14px;
+        border: 1px solid #464646;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+
+    <h1>Hi, you might type a wrong name or you don't have any message right now</h1>
+    
+    <p>Please try again</p>
+
+    <button type="button" onclick="tryAgain()">Try again</button>
+
+    <script>
+        function tryAgain() {
+                window.location.href = 'Meeting.html'; // Redirect to the home page
+        }
+    </script>
+
+</body>
+</html>

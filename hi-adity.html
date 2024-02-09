@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Adity</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link href="./resources/CSS/blue.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <audio id="bg-music" autoplay loop>
+            <source src="./resources/music/TheMerryGoRoundOfLife-JoeHisaishi-3908972.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="top-right">
+            <button class="play-pause-btn" onclick="togglePlayPause()">
+                <span id="play-icon" class="icon">&#9654;</span> <!-- Play icon -->
+                <span id="pause-icon" class="icon" style="display: none;">&#9612;&#9612;</span> <!-- Pause icon -->
+            </button>
+        </div>
+    
+        <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="goToMeeting()">
+            <path d="M20 12H4" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 18L4 12L10 6" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div>
+        <div id="section1" class="main1">
+            <h1>Hi Adity, you have a new message!</h1>
+            <div class="message-container">
+                <p>Shall we play some music before reading this message?</p>
+                <p>If you are ready to read the message</p>
+                <button class="button" onclick="openMessage()">Click Here</button>
+            </div>
+        </div>
+        
+        <div id="section2" class="main2">
+            <h1>Hey Adity,</h1>
+            <div>
+                <p>How have you been? I hope everything are going great for you. Even if there is a tough day, I believe you can make it through. Because
+                    you are one of the strongest and the most independent person that I have known and I alway admires you for that. Since today is a Valentine's day,
+                    I hope you will have an awesome day with your friends and your love one. Thank you so much for being such a good person and I enjoyed all the time that we spent together!
+                </p>
+                <p1>You are perfect!</p1>
+                <!-- <div class="cursor"></div> -->
+            </div>
+    
+           
+        </div>
+    
+    
+        <div id="section3" class="main3">
+            <h1 class="question"> Let's keep in touch, shall we?</h1>
+            <p></p>
+            <div class="btn-group">
+                <button class="yes-btn">Yes</button>
+                <button class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script>
+  
+    function goToMeeting() {
+        window.location.href = 'Meeting.html'; // Redirect to the "Meeting" page
+    }
+    function openMessage() {
+            window.location.href = '#section2'; // Scroll to section 2 where the message is
+        }
+
+    // Function to toggle play/pause
+    function togglePlayPause() {
+    var bgMusic = document.getElementById('bg-music');
+    var playIcon = document.getElementById('play-icon');
+    var pauseIcon = document.getElementById('pause-icon');
+
+    if (bgMusic.paused) {
+        bgMusic.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+        localStorage.setItem('musicState', 'playing');
+    } else {
+        bgMusic.pause();
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+        localStorage.setItem('musicState', 'paused');
+    }
+}
+
+    </script>
+
+</body>
+</html>

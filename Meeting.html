@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Bit Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        body {
+            background-color: #d4f5d0; /* Light green pastel */
+            color: #464646; /* Dark gray text */
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        button {
+            font-family: 'Press Start 2P', cursive;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 12px;
+            background-color: #4f9d4f; /* Pastel green */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #6abf69; /* Darker green on hover */
+        }
+
+        input {
+            font-family: 'Press Start 2P', cursive;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            border: 1px solid #464646;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hi, how are you?</h1>
+    
+    <p>Enter Your Name:</p>
+    
+    <input type="text" id="nameInput" placeholder="Type your name">
+
+    <button type="button" onclick="checkName()">Submit</button>
+
+    <script>
+        function checkName() {
+            var enteredName = document.getElementById('nameInput').value;
+
+            if (enteredName.toLowerCase() === 'trang') {
+                window.location.href = 'hi-trang.html'; // Redirect to the "Hi Trang" page
+            } 
+            else if (enteredName.toLowerCase() === 'adity') {
+                window.location.href = 'hi-adity.html'; // Redirect to the "Hi Adity" page
+            }
+            else if (enteredName.toLowerCase() === 'faye') {
+                window.location.href = 'hi-faye.html'; // Redirect to the "Hi Adity" page
+            } 
+            else if (enteredName.toLowerCase() === 'mia') {
+                window.location.href = 'hi-mia.html'; // Redirect to the "Hi Adity" page
+            } 
+            else if (enteredName.toLowerCase() === 'chloe') {
+                window.location.href = 'hi-chloe.html'; // Redirect to the "Hi Adity" page
+            } 
+            else if (enteredName.toLowerCase() === 'olivia') {
+                window.location.href = 'hi-olivia.html'; // Redirect to the "Hi Adity" page
+            } 
+            else {
+                window.location.href = 'not-welcome.html'; // Redirect to the "Not Welcome" page
+            }
+        }
+    </script>
+
+</body>
+</html>

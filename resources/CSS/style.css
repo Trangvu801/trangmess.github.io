@@ -1,0 +1,30 @@
+body{
+    background-image: url("/Users/VuThuTrang/Desktop/Katie/IMG_4379.jpeg");
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: plum;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: plum;
+}
+
+.banner{
+    background-color: lightgray;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#small-Katie{
+    width: 120px;
+    height: auto;
+}
+
+#Katie{
+    color: plum;
+    font-weight: bold;
+    font-size: 50px;
+}

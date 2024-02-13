@@ -1,0 +1,191 @@
+/* Reset CSS */
+
+
+/* Body Styles */
+body {
+    background-color: #d4f5d0; /* Light green pastel */
+    color: #464646; /* Dark gray text */
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 20px;
+}
+
+/* Button Styles */
+.next-btn,
+button {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #6abf69; /* Pastel green */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 50px;
+}
+
+.next-btn {
+    background-color: #4f9d4f; /* Pastel green for Next button */
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover,
+button:hover {
+    background-color: #2b4d2b; /* Darker green on hover */
+}
+
+/* Input Styles */
+input {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: 1px solid #464646;
+    border-radius: 4px;
+}
+
+/* Arrow Icon Styles */
+.arrow-icon {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    cursor: pointer;
+}
+
+/* Audio Player Styles */
+#bg-music {
+    display: none; /* Hide the audio player */
+}
+
+/* Top-right Position Styles */
+.top-right {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+}
+
+/* Play/Pause Button Icon Styles */
+.play-pause-btn {
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.play-pause-btn:hover {
+    color: #6abf69; /* Pastel green */
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* Smooth Scroll Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Styles */
+#section1,
+#section2,
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: #d4f5d0;
+}
+
+/* Main Section Margin Styles */
+.main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    margin-bottom: 500px;
+}
+
+.main2 {
+    margin-top: 300px;
+    margin-bottom: 500px;
+}
+.main3 {
+    margin-top: 300px;
+    margin-bottom: 500px;
+}
+
+#choice-button {
+        position: absolute;
+        width: 50px;
+        background-color: #6abf69; /* Pastel green */
+        color: white;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        font-size: 12px;
+    }
+
+.btn-group:nth-child(1) {
+        margin-left: -200px;
+        background: #2b4d2b;
+        }
+
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+    
+.btn-group:nth-child(2) {
+        margin-right: -200px;
+        background: white;
+        color: #2b4d2b;
+        }
+
+
+.button {
+    cursor: pointer;
+    background-color: #6abf69; /* Pastel green */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+
+.main2 div p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+    line-height: 1.5; /* Adjust line height for better readability */
+}

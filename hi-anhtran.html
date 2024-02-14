@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi Adity</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
-    <link href="./resources/CSS/blue.css" rel="stylesheet">
+    <link href="./resources/CSS/AnhTran.css" rel="stylesheet">
 
 </head>
 <body>
     <audio id="bg-music" autoplay loop>
-        <source src="./resources/music/TheMerryGoRoundOfLife-JoeHisaishi-3908972.mp3" type="audio/mp3">
+        <source src="./resources/music/Laufey - Valentine.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
     <div class="top-right">
@@ -24,38 +24,43 @@
         <path d="M20 12H4" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M10 18L4 12L10 6" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
-    <div id="section1" class="main1">
-        <h1>Hi Adity, you have a new message!</h1>
-        <div class="message-container">
-            <p>Shall we play some music before reading this message?</p>
-            <p>If you are ready to read the message</p>
-            <button class="button" onclick="openMessage()">Click Here</button>
+    <div>
+        <div id="section1" class="main1">
+            <h1>Hi Anh Tran, you have a new message!</h1>
+            <div class="message-container">
+                <p>Shall we play some music before reading this message?</p>
+                <p>If you are ready to read the message</p>
+                <button class="button" onclick="openMessage()">Click Here</button>
+            </div>
+        </div>
+        
+        <div id="section2" class="main2">
+            <h1>Hey Anh Tran,</h1>
+            <div class = "message-container">
+                <p>Happy Valentine's Day! I hope your semester is still going well. I know that I mention this to you a lot but I still want to let you know
+                    that you are an amazing person, a really supportive friend and I'm really grateful to know you and be your friend.
+                </p>
+                <p>Thank you for everything and I enjoyed all the time that we spent together!</p>
+                <button class="button" onclick="finalMessage()">Click Here</button>
+            </div>
+    
+           
+        </div>
+    
+    
+        <div id="section3" class="main3">
+            <h1 class="question"> Let's hangout, shall we?</h1>
+            <img src="./resources/Pic/Anh.jpeg" alt="Anh Tran Image" class="picAnh">
+            <p> Do you know you can scan this picture?</p>
+            <div class="btn-group">
+                <button class="yes-btn">Yes</button>
+                <button class="no-btn">No</button>
+            </div>
         </div>
     </div>
     
-    <div id="section2" class="main2">
-        <h1>Hey Adity,</h1>
-        <div>
-            <p>How have you been? I hope everything are going great for you. Even if there is a tough day, I believe you can make it through. Because
-                you are one of the strongest and the most independent person that I have known and I alway admires you for that. Since today is a Valentine's day,
-                I hope you will have an awesome day with your friends and your love one. Thank you so much for being such a good person and I enjoyed all the time that we spent together!
-            </p>
-        </div>
 
-       
-    </div>
-
-
-    <div id="section3" class="main3">
-        <h1 class="question"> Let's keep in touch, shall we?</h1>
-        <p></p>
-        <div class="btn-group">
-            <button class="yes-btn">Yes</button>
-            <button class="no-btn">No</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="Adity.js"></script>
     <script>
   
     function goToMeeting() {
@@ -63,6 +68,9 @@
     }
     function openMessage() {
             window.location.href = '#section2'; // Scroll to section 2 where the message is
+        }
+    function finalMessage() {
+            window.location.href = '#section3'; // Scroll to section 2 where the message is
         }
 
     // Function to toggle play/pause

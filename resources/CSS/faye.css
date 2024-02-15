@@ -182,3 +182,8 @@ textarea {
     align-items: center;
     justify-content: center;
 }
+
+.question{
+    margin-bottom: 20px;
+    line-height: 2;
+}

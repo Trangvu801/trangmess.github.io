@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Mia Mac</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link href="./resources/CSS/Mia.css" rel="stylesheet">
+    <link href="./resources/CSS/button.css" rel="stylesheet">
+
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="./resources/music/MoiChamMoi.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="goToMeeting()">
+        <path d="M20 12H4" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 18L4 12L10 6" stroke="#464646" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <div id="section2" class="main2" >
+        <h1 class="question">Be my friend?</h1>
+        <img src="./resources/Pic/Faye Mia.jpeg" alt="Mia Faye Image" class="picMia">
+        <div class="wrapper">
+            <h2 class="question"></h2>
+            <div class="btn-group">
+                <button id="choice-button" class="yes-btn">Yes</button>
+                <button id="choice-button" class="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="Mia.js"></script>
+    <script>
+  
+    function goToMeeting() {
+        window.location.href = 'hi-mia.html'; // Redirect to the "Meeting" page
+    }
+    function openMessage() {
+            window.location.href = 'hi-mia1.html'; // Scroll to section 2 where the message is
+        }
+
+    // Function to toggle play/pause
+    function togglePlayPause() {
+    var bgMusic = document.getElementById('bg-music');
+    var playIcon = document.getElementById('play-icon');
+    var pauseIcon = document.getElementById('pause-icon');
+
+    if (bgMusic.paused) {
+        bgMusic.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+        localStorage.setItem('musicState', 'playing');
+    } else {
+        bgMusic.pause();
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+        localStorage.setItem('musicState', 'paused');
+    }
+}
+
+    </script>
+
+</body>
+</html>

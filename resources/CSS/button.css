@@ -20,24 +20,57 @@
 
 button {
         position: absolute;
-        width: 50px;
-        background-color: #6abf69; /* Pastel green */
-        color: white;
-        border-radius: 4px;
-        outline: none;
-        cursor: pointer;
-        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
         font-size: 12px;
+        background-color: #FF85A2; /* Pastel green */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+button:hover {
+        background-color: #FF85A2; /* Darker green on hover */
     }
 
 button:nth-child(1) {
         margin-left: -200px;
-        background: #2b4d2b;
+        background: #FF85A2;
         }
     
 button:nth-child(2) {
         margin-right: -200px;
         background: white;
-        color: #2b4d2b;
+        color: #FF85A2;
         }
 
+/* Audio Player Styles */
+#bg-music {
+    display: none; /* Hide the audio player */
+}
+
+/* Top-right Position Styles */
+.top-right {
+    position: absolute;
+    top: 5px;
+    right: 80px;
+}
+
+/* Play/Pause Button Icon Styles */
+.play-pause-btn {
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.play-pause-btn:hover {
+    color: #FFEBF0; /* Pastel green */
+}
+
+.icon {
+    font-size: 20px;
+}
